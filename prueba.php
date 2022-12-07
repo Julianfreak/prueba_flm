@@ -10,7 +10,7 @@
 			$email=$_POST['email'];
 			$fecha_reg= date("d/m/y"); 
 			$consulta= "INSERT INTO informacion ( Nombre, Apellidos, Edad, Email, Fecha_registro) VALUES ('$nombres','$apellidos',$edad,'$email','$fecha_reg')"; 
-			$resultado= mysqli_query($conexion, $consulta); var_dump($conexion);
+			$resultado= mysqli_query($conexion, $consulta); 
 			if ($resultado) {
 				?>
 					<h3 class="ok"> Registro exitoso !</h3>
